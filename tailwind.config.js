@@ -1,9 +1,12 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
+// /** @type {import('tailwindcss').Config} */
 
+const colors = require('tailwindcss/colors');
+
+module.exports = {
+  purge: ['./src/**/*{html,js}'],
+  theme: {
+    colors: {
+      ...colors,
+    },
+  },
+};
